@@ -1,0 +1,12 @@
+sudo service dhcpcd status
+sudo service dhcpcd start 
+sudo service dhcpcd start sudo systemctl enable dhcpcd
+sudo nano /etc/dhcpcd.conf
+# Example static IP configuration:
+  interface wlan0
+  static ip_address=192.168.0.125/24
+  static routers=192.168.0.1
+  static domain_name_servers=192.168.0.1
+
+sudo reboot
+# Should now be accessible with ssh pi@192.168.0.125
