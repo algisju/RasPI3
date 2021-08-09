@@ -1,6 +1,6 @@
 # Put SD Card in PI, boot it (green flashing)
 # Find the IP with nmap <your wifi subnet>
-ssh pi$<ip found>
+ssh pi@<ip found>
 #accept key (yes)
 connect with pwd raspberry
 # Wait for prompt
