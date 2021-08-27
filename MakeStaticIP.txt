@@ -1,6 +1,7 @@
 sudo service dhcpcd status
 sudo service dhcpcd start 
-sudo service dhcpcd start sudo systemctl enable dhcpcd
+sudo service dhcpcd start 
+sudo systemctl enable dhcpcd
 sudo nano /etc/dhcpcd.conf
 # Example static IP configuration:
   interface wlan0
