@@ -5,3 +5,8 @@ ssh pi@<ip found>
 connect with pwd raspberry
 # Wait for prompt
 sudo raspi-config
+
+
+# Making local disk copy from Pi
+dd if=/dev/hda3 | gzip -9 | nc -l 3333  (on the Pi)
+nc [destination] 3333 | pv -b > hdImage.img.gz (on the machine that ssh to pi)
